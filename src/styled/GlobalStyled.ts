@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     --primary-10: rgb(254, 239, 242);  /* rgb(254, 239, 242) */
     --primary-20: rgb(253, 230, 236);  /* rgb(253, 230, 236) */
     --primary-30: rgb(250, 204, 215);  /* rgb(250, 204, 215) */
-    --primary-40: rgb(245, 126, 154);  /* rgb(245, 126, 154) */
+    --primary-40: rgb(245, 126, 154);  /* rgb(24  5, 126, 154) */
     --primary-50: rgb(240, 90, 126);   /* rgb(240, 90, 126) */
     --primary-60: rgb(216, 81, 113);   /* rgb(216, 81, 113) */
     --primary-70: rgb(192, 72, 100);   /* rgb(192, 72, 100) */
@@ -126,7 +126,6 @@ html,
 body {
   position: relative;
   width: 100%;
-  height: 100%;
   font-family: var(--font-primary);
   color: var(--text-primary);
   line-height: var(--line-height-base);

@@ -1,22 +1,161 @@
 import styled from 'styled-components';
 
 export const ProjectWrap = styled.div`
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
-  padding-top: 100px;
+  padding: 30px 80px;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 900px;
   background-color: var(--background-primary);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 900;
+  .top {
+    width: 100%;
+    max-width: 1600px;
+    border-top: 1px solid white;
+    box-sizing: border-box;
+    padding: 0 80px;
+    margin-top: 120px;
+    position: relative;
+    .top-right {
+      width: calc(20% + 1px);
+      border-right: 1px solid white;
+      height: 120px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .bottom {
+    display: flex;
+    height: 100%;
+    .left {
+      width: 20%;
+      height: 100%;
+      .category {
+        margin-top: 30px;
+        align-items: center;
+        ul {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          gap: 25px;
+          li {
+            display: flex;
+            gap: 24px;
+            font-size: 20px;
+            align-items: center;
+            color: #555555;
+            .icon {
+              width: 48px;
+              height: 48px;
+              img {
+                display: none;
+              }
+            }
+            ul {
+              display: none;
+            }
+          }
+          .active {
+            display: flex;
+            gap: 24px;
+            font-size: 20px;
+            align-items: center;
+            color: white;
+            .icon {
+              width: 48px;
+              height: 48px;
+              img {
+                display: block;
+              }
+            }
+            ul {
+              display: flex;
+              gap: 20px;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              margin-top: 32px;
+              border-top: 1px solid white;
+              width: 100%;
+              padding: 30px 10%;
+              h2 {
+                font-size: 20px;
+              }
+              .list {
+                display: flex;
+                gap: 16px;
+                li {
+                  padding: 4px 12px;
+                  color: white;
+                  border-radius: 20px;
+                  border: 1px solid white;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .right {
+      border-left: 1px solid white;
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .video {
+        height: 100%;
+        padding: 32px 16px;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .link {
+        display: flex;
+        gap: 16px;
+        padding: 0 16px;
+        margin-top: 13px;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        .site {
+          width: 50px;
+          hieght: 50px;
+          border-radius: 999px;
+          background-color: #333333;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 32px;
+            hieght: 32px;
+            filter: invert(98%) sepia(0%) saturate(20%) hue-rotate(190deg)
+              brightness(88%) contrast(95%);
+          }
+        }
+      }
+    }
+  }
 `;
 export const StackWrap = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
+  width: 100%;
+  max-width: 1600px;
   align-items: center;
+  gap: 10px;
   span {
     font-family: 'LOTTERIADDAG';
-    font-size: 64px;
-    padding: 50px;
+    font-size: 48px;
+    padding: 20px;
     border-radius: 100px;
   }
   .html {
@@ -66,7 +205,7 @@ export const HomeWrap = styled.div`
   }
   .summary {
     margin-top: 50px;
-    font-size: 36px;
+    font-size: 24px;
     display: flex;
     gap: 20px;
     flex-direction: column;
