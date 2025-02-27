@@ -2,6 +2,16 @@ import React from 'react';
 import { ProjectWrap } from './style';
 
 const Project: React.FC = () => {
+  const projectList = [
+    {
+      id: 1,
+      title: 'CLIO Cosmetic 개��',
+      videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
+      githubLink: 'https://cliocosmetic.com',
+      link: 'https://github.com/',
+      skills: ['JS', 'React', 'GSAP'],
+    },
+  ];
   return (
     <ProjectWrap>
       <div className="top">
