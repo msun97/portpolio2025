@@ -8,10 +8,15 @@ export const ProjectWrap = styled.div`
   width: 100%;
   max-width: 1600px;
   max-height: 900px;
-  background-color: var(--background-primary);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  z-index: 900;
+  var(--background-primary); 
+  .wrap {
+    // background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 900;
+    height: 100%;
+    max-height: 900px;
+  }
   .top {
     width: 100%;
     max-width: 1600px;
@@ -49,6 +54,7 @@ export const ProjectWrap = styled.div`
             font-size: 20px;
             align-items: center;
             color: #555555;
+            cursor: pointer;
             .icon {
               width: 48px;
               height: 48px;
@@ -89,6 +95,7 @@ export const ProjectWrap = styled.div`
               .list {
                 display: flex;
                 gap: 16px;
+                flex-wrap: wrap;
                 li {
                   padding: 4px 12px;
                   color: white;
@@ -110,6 +117,7 @@ export const ProjectWrap = styled.div`
       flex-direction: column;
       .video {
         height: 100%;
+        max-height: 500px;
         padding: 32px 16px;
         iframe {
           width: 100%;
@@ -157,6 +165,7 @@ export const StackWrap = styled.div`
     font-size: 48px;
     padding: 20px;
     border-radius: 100px;
+    z-index: 889;
   }
   .html {
     border: 5px solid #b7b1f2;
