@@ -1,8 +1,9 @@
 import React from 'react';
 import TecStack from './components/tecStack';
 import Home from './components/home';
-import { MainWrap } from './style';
+  import { MainWrap } from './style';
 import Project from './components/Project';
+import Introduction from './components/introduction';
 
 const Index: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Index: React.FC = () => {
         <Home />
         <TecStack />
       </div>
+      <Introduction/>
       <Project />
     </MainWrap>
   );

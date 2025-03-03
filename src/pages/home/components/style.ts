@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+export const IntroWrap = styled.div``
+
 export const ProjectWrap = styled.div`
   height: 100vh;
   display: flex;

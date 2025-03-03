@@ -14,11 +14,11 @@ const Project: React.FC = () => {
     },
     {
       id: 2,
-      title: '반려인 커뮤니티 앱',
+      title: '감정 분석 일기장',
       videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
       githubLink: 'https://cliocosmetic.com',
       link: 'https://github.com/',
-      skills: ['JS', 'React', 'GSAP'],
+      skills: ['Next.js', 'TS', 'React', 'Redux', 'GSAP'],
     },
     {
       id: 3,
