@@ -21,6 +21,9 @@ const Layout: React.FC = () => {
             <a href="#home" onClick={handleToggle}>
               <li>Home</li>
             </a>
+            <a href="#intro" onClick={handleToggle}>
+              <li>Introduction</li>
+            </a>
             <a href="#project" onClick={handleToggle}>
               <li>Project</li>
             </a>

@@ -34,7 +34,7 @@ const Project: React.FC = () => {
       videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
       githubLink: 'https://cliocosmetic.com',
       link: 'https://github.com/',
-      skills: ['Next.js', 'React', 'Redux', 'Gsap'],
+      skills: [, 'React', 'Redux', 'Gsap','tailwindCSS'],
     },
   ];
   const [isActive, setIsActive] = useState(1);
@@ -43,7 +43,7 @@ const Project: React.FC = () => {
   };
   return (
     <ProjectWrap>
-      <div className="wrap">
+      <div className="wrap" id='project'>
         <div className="top">
           <div className="top-right"></div>
         </div>
