@@ -203,6 +203,11 @@ export const ProjectWrap = styled.div`
           width: 100%;
           height: 100%;
         }
+          .no-results {
+          background-color: gray;
+          width: 100%;
+          height: 100%;
+          }
       }
       .link {
         display: flex;
