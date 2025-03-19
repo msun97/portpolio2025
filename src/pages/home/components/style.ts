@@ -218,6 +218,7 @@ export const ProjectWrap = styled.div`
           width: 50px;
           height: 50px;
         }
+          
         .site {
           width: 50px;
           hieght: 50px;

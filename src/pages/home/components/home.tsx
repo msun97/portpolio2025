@@ -1,6 +1,5 @@
 import React from 'react';
 import { HomeWrap } from './style';
-
 const Home: React.FC = () => {
   return (
     <HomeWrap id="home">
