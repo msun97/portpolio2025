@@ -38,7 +38,7 @@ const Project: React.FC = () => {
     },
   ];
   const [isActive, setIsActive] = useState(1);
-  const handleClick = id => {
+  const handleClick =(id: number) => {
     setIsActive(id);
   };
   return (
