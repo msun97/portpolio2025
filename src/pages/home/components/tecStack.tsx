@@ -25,14 +25,15 @@ const TecStack: React.FC = () => {
           rotateZ: 0,
         },
         {
-          y: gsap.utils.random(300, 600), // 더 아래로 떨어지도록 값 증가
+          y: gsap.utils.random(500, 600), // 더 아래로 떨어지도록 값 증가
           x: gsap.utils.random(-150, 150), // 좌우 랜덤 이동 범위 확장
           rotateZ: rotations[index],
           ease: 'power1.in', // 떨어지는 느낌을 위해 ease 변경
           scrollTrigger: {
             trigger: techRef.current,
             start: 'top 80%',
-            end: 'bottom 0%', // 스크롤 범위 확장
+            end: 'bottom -50%', // 스크롤 범위 확장
+            markers: true,
             scrub: 1, // 값을 주면 스크롤과 애니메이션 사이에 지연 효과 추가
             invalidateOnRefresh: false,
           },

@@ -1,6 +1,23 @@
 import styled from 'styled-components';
 
-export const IntroWrap = styled.div``
+export const IntroWrap = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 80px;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 900px;
+  var(--background-primary); 
+  .wrap {
+    // background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 900;
+    height: 100%;
+    max-height: 900px;
+  }
+`;
 
 export const ProjectWrap = styled.div`
   height: 100vh;
