@@ -6,44 +6,44 @@ const Project: React.FC = () => {
     {
       id: 1,
       title: 'CLIO Cosmetic 개편',
-      videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
+      videoLink: 'https://www.youtube.com/embed/MHjbMCCVN08',
       githubLink:
         'https://github.com/msun97/project1--react-master?tab=readme-ov-file',
       link: 'https://project1-react-master.vercel.app/',
       skills: ['JS', 'React', 'GSAP'],
     },
+    // {
+    //   id: 2,
+    //   title: '감정 분석 일기장',
+    //   videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
+    //   githubLink: 'https://cliocosmetic.com',
+    //   link: 'https://github.com/',
+    //   skills: ['Next.js', 'TS', 'React', 'Redux', 'GSAP'],
+    // },
     {
       id: 2,
-      title: '감정 분석 일기장',
-      videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
-      githubLink: 'https://cliocosmetic.com',
-      link: 'https://github.com/',
-      skills: ['Next.js', 'TS', 'React', 'Redux', 'GSAP'],
-    },
-    {
-      id: 3,
-      title: 'OTT Viewee',
-      videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
+      title: 'OTT Viewee', 
+      // videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
       githubLink: 'https://github.com/zio-s/project-viewee',
       link: 'https://viewee.vercel.app/',
       skills: ['JS', 'React', 'Redux'],
     },
     {
-      id: 4,
+      id: 3,
       title: 'Van Cleef 쇼핑몰 개편',
-      videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
-      githubLink: 'https://cliocosmetic.com',
-      link: 'https://github.com/',
-      skills: ['Next.js', 'React', 'Redux', 'Gsap'],
+      // videoLink: 'https://www.youtube.com/embed/jWQx2f-CErU',
+      githubLink: 'https://github.com/msun97/project-vancleef',
+      link: 'https://project-vancleef.vercel.app/',
+      skills: ['JS', 'React', 'Redux', 'Gsap','tailwindCSS'],
     },
   ];
   const [isActive, setIsActive] = useState(1);
-  const handleClick = id => {
+  const handleClick =(id: number) => {
     setIsActive(id);
   };
   return (
     <ProjectWrap>
-      <div className="wrap">
+      <div className="wrap" id='project'>
         <div className="top">
           <div className="top-right"></div>
         </div>
@@ -76,13 +76,16 @@ const Project: React.FC = () => {
           </div>
           <div className="right">
             <div className="video">
-              <iframe
-                src="https://www.youtube.com/embed/jWQx2f-CErU"
-                title="aespa 에스파 &#39;Whiplash&#39; MV"
+              {
+                projectList[isActive - 1].videoLink?              <iframe
+                src={projectList[isActive - 1].videoLink}
+                title={projectList[isActive - 1].title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
-              ></iframe>
+              ></iframe> : <div className='no-results'></div>
+              }
+
             </div>
             {projectList.map(
               project =>

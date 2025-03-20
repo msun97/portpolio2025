@@ -1,31 +1,92 @@
 import styled from 'styled-components';
 
-export const IntroWrap = styled.div`
+export const ContactWrap = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 30px 80px;
   width: 100%;
-  max-width: 1600px;
   max-height: 900px;
   var(--background-primary); 
   .wrap {
-    // background-color: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     z-index: 900;
     height: 100%;
     max-height: 900px;
-  }
+      padding: 120px 160px;
+          h1{
+    font-family: 'LOTTERIACHAB';
+    font-size: 128px;
+    margin-bottom: 35px;
+    }
+    .contact{
+    font-family: 'pretendard';
+    font-size: 40px;
+    display: flex;
+    gap: 24px 450px;
+    flex-wrap: wrap;
+    }
+}
 `;
+
+export const IntroWrap = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 900px;
+  var(--background-primary); 
+  .wrap {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 900;
+    height: 100%;
+    max-height: 900px;
+      padding: 120px 160px;
+    h1{
+    font-family: 'LOTTERIACHAB';
+    font-size: 64px;
+    }
+    .content{
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'pretendard';
+    margin-bottom: 80px;
+    }
+    .skills{
+    display: flex;
+    gap: 200px;
+    width: 100%;
+    justify-content: center;
+    div{
+    width: 220px;
+    height: 270px;
+    border-radius: 20px;
+    border: 1px solid #AEAEAE;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    svg{
+    width: 65px;
+    height: 65px;
+    }
+    p{
+    font-size: 20px;
+    font-family: 'pretendard'
+    }
+    }
+    }
+  }`;
 
 export const ProjectWrap = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 30px 80px;
-  width: 100%;
-  max-width: 1600px;
+  padding:0   80px;
+  width: 100%;  
   max-height: 900px;
   var(--background-primary); 
   .wrap {
@@ -35,10 +96,10 @@ export const ProjectWrap = styled.div`
     z-index: 900;
     height: 100%;
     max-height: 900px;
+    padding: 30px 80px;
   }
   .top {
     width: 100%;
-    max-width: 1600px;
     border-top: 1px solid white;
     box-sizing: border-box;
     padding: 0 80px;
@@ -142,6 +203,11 @@ export const ProjectWrap = styled.div`
           width: 100%;
           height: 100%;
         }
+          .no-results {
+          background-color: gray;
+          width: 100%;
+          height: 100%;
+          }
       }
       .link {
         display: flex;
@@ -152,6 +218,7 @@ export const ProjectWrap = styled.div`
           width: 50px;
           height: 50px;
         }
+          
         .site {
           width: 50px;
           hieght: 50px;

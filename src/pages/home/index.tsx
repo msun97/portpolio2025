@@ -4,6 +4,7 @@ import Home from './components/home';
   import { MainWrap } from './style';
 import Project from './components/Project';
 import Introduction from './components/introduction';
+import Contact from './components/contact';
 
 const Index: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const Index: React.FC = () => {
       </div>
       <Introduction/>
       <Project />
+      <Contact />
     </MainWrap>
   );
 };
